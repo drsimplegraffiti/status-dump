@@ -22,12 +22,16 @@ Usage
 
 Once the package is installed, you can use the code command from the terminal to look up HTTP status codes. Here are a few examples:
 
+```bash
+code-dump 200
 ```
-const cd = require("code-dump");
-console.log(cd(202));
 
-// output: Accepted
 ```
+output: 200 OK
+```
+
+---
+
 
 ```
 
