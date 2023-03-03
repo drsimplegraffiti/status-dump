@@ -22,33 +22,14 @@ Usage
 
 Once the package is installed, you can use the code command from the terminal to look up HTTP status codes. Here are a few examples:
 
-```bash
+```
+const cd = require("code-dump");
+console.log(cd(202));
 
-code 200
+// output: Accepted
 ```
 
-Output:
-
-200 - OK
-
-```bash
-
-code 404
 ```
-
-Output:
-
-404 - Not Found
-
-```bash
-
-code 500
-```
-Output:
-
-javascript
-
-500 - Internal Server Error
 
 ##### Contributing
 
