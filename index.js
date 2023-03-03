@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 const codes = {
   100: "Continue",
   101: "Switching Protocols",
@@ -65,10 +67,14 @@ const codes = {
 
 function getStatusCode(code) {
   if (codes[code]) {
+    console.log(`${code} ${codes[code]}`);
     return `${code} ${codes[code]}`;
   } else {
     return "Unknown Status Code";
   }
 }
 
-module.exports = getStatusCode;
+const args = process.argv.slice(2);
+const code = args[0];
+
+module.exports = getStatusCode(code);
