@@ -30,6 +30,18 @@ code-dump 200
 output: 200 OK
 ```
 
+
+```bash
+code-dump 400
+```
+
+
+```
+output: 400 Bad Request
+```
+
+
+
 ---
 
 
