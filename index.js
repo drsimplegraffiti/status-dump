@@ -70,6 +70,7 @@ function getStatusCode(code) {
     console.log(`${code} ${codes[code]}`);
     return `${code} ${codes[code]}`;
   } else {
+    console.log(`Unknown Status Code 🙄`);
     return "Unknown Status Code";
   }
 }
