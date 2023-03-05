@@ -64,10 +64,33 @@ const codes = {
   510: "Not Extended",
   511: "Network Authentication Required",
 };
+let coder_headers = {
+  "1xx": "Informational",
+  "2xx": "Success",
+  "3xx": "Redirection",
+  "4xx": "Client error",
+  "5xx": "Server error",
+};
+
+let table_data = [coder_headers];
+
+let table_styles = {
+  "1xx": "color: blue",
+  "2xx": "color: green",
+  "3xx": "color: orange",
+  "4xx": "color: red",
+  "5xx": "color: purple",
+};
+
+console.table(table_data, ["1xx", "2xx", "3xx", "4xx", "5xx"], table_styles);
 
 function getStatusCode(code) {
   if (codes[code]) {
-    console.log(`${code} ${codes[code]}`);
+    console.log("=====================================================");
+     console.log(
+       `HTTP status code ${code}: \x1b[33m${codes[code]}\x1b[0m`
+     );
+    console.log("=====================================================");
     return `${code} ${codes[code]}`;
   } else {
     console.log(`Unknown Status Code 🙄`);

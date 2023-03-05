@@ -1,7 +1,7 @@
 {
   "name": "code-dump",
-  "version": "1.0.3",
-  "description": "status dump",
+  "version": "1.0.4",
+  "description": "A simple cli tool to get the status-code quickly",
   "main": "index.js",
   "bin": {
     "code-dump": "./index.js"
